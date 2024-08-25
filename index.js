@@ -23,7 +23,7 @@ app.post('/logout', handleLogout);
 
 connectToDB().then(() => {
     // Start the server only if the database connection is successful
-    const PORT = 4000;
+    const PORT = process.env.PORT || 4000;
     app.listen(PORT, () => {
       console.log(`Server started on port ${PORT}`);
     });
