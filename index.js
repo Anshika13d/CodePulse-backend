@@ -11,7 +11,7 @@ app.use(cookieParser())
 app.use(express.json());
 
 app.use(cors({
-    origin: 'https://codepulse-frontend.onrender.com/',
+    origin: 'https://codepulse-frontend.onrender.com',
     methods: ['GET', 'POST'],
     credentials: true
 }))
